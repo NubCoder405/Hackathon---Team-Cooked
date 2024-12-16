@@ -15,7 +15,7 @@
         }
 
         .navbar {
-            background-color: #388e3c;
+            background-color: #000000;
         }
 
         .navbar .nav-link {
@@ -27,24 +27,15 @@
         .navbar .nav-link:hover {
             color: #c8e6c9;
         }
-        .video-background {
-        position: absolute; /* Change from fixed to absolute */
+        .background-image {
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            background: url('Everest.jpg') center center/cover no-repeat;
             z-index: -1;
         }
-
-        .video-background video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: cover;
-        }
-
         .content {
             position: relative;
             z-index: 1;
@@ -74,12 +65,8 @@
 </head>
 <body>
     <!-- Video Background -->
-    <div class="video-background">
-        <video autoplay muted loop>
-            <source src="C:/Users/Lenovo/Downloads/Everest.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+    <div class="background-image"></div>
+
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -92,7 +79,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#explore">Explore</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About_us.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
             </div>
