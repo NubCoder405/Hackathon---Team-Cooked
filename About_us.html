@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            background-color: #f4f4f9;
+            background-image: url('Nature.jpg');
+            background-size: cover; /* Ensures the image covers the entire area */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            height: 100vh; /* Full viewport height */
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            z-index: 1000;
+        }
+        
+
+        .navbar .nav-link {
+            color: #fff;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .navbar .nav-link:hover {
+            color: #c8e6c9;
+        }
+
+        .about-section {
+            
+            padding: 80px 20px;
+            margin-top: 70px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Slight transparency */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 100px auto;
+        }
+        
+
+        .about-section h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .about-section img {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .team-section .team-member {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">NatureHackathon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Main.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#explore">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <h1>About Us</h1>
+        <img src="team-photo.jpg" alt="Our Team">
+        <p>Welcome to NatureHackathon, a platform dedicated to fostering innovation in promoting local tourism and preserving cultural heritage. Our mission is to inspire people to discover, protect, and celebrate the natural beauty and cultural significance of our region. 
+        We believe in sustainable tourism that connects communities, preserves traditions, and enhances the visitor experience.</p>
+    </section>
+ 
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
