@@ -3,71 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everest</title>
+    <title>Everest - Tourist Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Reset margins */
+        /* General Styles */
         body, html {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            scroll-behavior: smooth;
         }
 
-        /* Banner style */
+        /* Navbar Styles */
+        .navbar {
+            background-color: #062745;
+        }
+        .navbar .nav-link:hover {
+            color: #28a745 !important;
+        }
+
+        /* Banner Section */
         .banner {
-    width: 1350px;
-    height: 600px; /* Adjust banner height */
-    background: url('Everest.jpeg') no-repeat;
-    background-size: cover; /* Ensures the image covers the container */
-    background-position: top center; /* Aligns the top part of the image */
-    position: relative; /* Makes text positioning relative to the banner */
-}
-
-        /* Everest text styling */
-        .banner h1 {
-            position: absolute; /* Position the heading absolutely within the banner */
-            bottom: 20px; /* Place the text at the bottom */
-            left: 50%; /* Center the text horizontally */
-            transform: translateX(-50%); /* Adjust to center the heading horizontally */
-            color: white; /* Optional text color for contrast */
-            margin: 0; /* Removes default margin */
-            font-size: 36px; /* Adjust font size */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: add a text shadow for readability */
-        }
-
-        /* Content styling */
-        .content {
-            padding: 20px;
-            text-align: justify;
-        }
-
-        h1 {
+            height: 500px;
+            background: url('Everest.jpeg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+        }
+        .banner h1 {
+            font-size: 80px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Content Section */
+        .content {
+            margin: 40px auto;
+            max-width: 1100px;
+            padding: 0 20px;
+        }
+        h2, h4 {
+            color: #062745;
             margin-top: 20px;
+        }
+
+        /* Image Gallery */
+        .gallery img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #062745;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+            /* Buttons */
+        .btn-custom {
+            background-color: #2C3E50;
+            color: #fff;
+            margin: 10px 0;
+        }
+        .btn-custom:hover {
+            background-color: #1A252F;
+            color: #fff;
+        }
+        .btn-center{
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wanderer's Journey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Main.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Destination.html">Destination</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Banner Section -->
     <div class="banner">
-        <h1 style="margin-bottom:50px; font-size:100px">Everest</h1>
+        <h1>Everest</h1>
     </div>
 
     <!-- Content Section -->
     <div class="content">
-        <h1>Mount Everest</h1>
+        <h2>Everest</h2>
         <p>
-            Mount Everest, known as "Sagarmatha" in Nepal and "Chomolungma" in Tibet, is the tallest mountain on Earth. 
-            It rises to a staggering 8,848 meters (29,029 feet) above sea level, located in the Himalayas on the border 
-            between Nepal and Tibet. Every year, climbers from all over the world attempt to reach its summit, facing 
-            extreme weather conditions and physical challenges.
+            Mount Everest, known as Sagarmatha in Nepali and Chomolungma in Tibetan, is the world's highest peak, towering at 8,848.86 meters. It is located in the Mahalangur Range of the Himalayas and lies on the border between Nepal and Tibet.
         </p>
         <p>
-            The mountain symbolizes adventure, perseverance, and nature's grandeur. It has a rich cultural and spiritual 
-            significance for the people living around it. Despite the challenges, conquering Everest remains a dream for 
-            many mountaineers and adventurers worldwide.
+            Everest is not just a mountain; it's a symbol of human ambition and endurance. Every year, thousands of climbers and trekkers visit the Everest region to experience its majestic beauty and challenge themselves.
         </p>
+        
+        <h4>Tourism</h4>
+        <p>
+            The Everest region attracts adventure seekers from around the globe. Popular activities include trekking to Everest Base Camp, scaling the peak itself, and exploring the rich culture of the Sherpa people who inhabit the area.
+        </p>
+        
+        <h4>Things to Know</h4>
+        <ul>
+            <li><strong>Best Time to Visit:</strong> March to May and September to November</li>
+            <li><strong>Entry Fee:</strong> 
+                <ul>
+                    <li>Sagarmatha National Park Permit: NPR 3,000 for SAARC nationals, NPR 6,000 for others</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Gallery</h4>
+        <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 15px;">
+            <img src="Everest.jpg" alt="Everest View 1" style="width: 30%; border-radius: 10px;">
+            <img src="Everest4.jpg" alt="Everest View 2" style="width: 30%; border-radius: 10px;">
+            <img src="Everest3.jpg" alt="Everest View 3" style="width: 30%; border-radius: 10px;">
+        </div>
+        
+        <h4>Things to Do</h4>
+        <ul>
+            <li>Embark on the Everest Base Camp trek.</li>
+            <li>Climb Mount Everest or nearby peaks like Lhotse and Ama Dablam.</li>
+            <li>Explore Sherpa villages and Buddhist monasteries.</li>
+            <li>Witness the stunning views of the Himalayas, including sunrise at Kala Patthar.</li>
+        </ul>
     </div>
-    <a href="Destinaton.html" style="margin:20px"> Back</a>
+
+    <!-- Contact Section -->
+    <div id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>For travel arrangements or inquiries, reach out to us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:info@wanderersjourney.com">info@wanderersjourney.com</a></li>
+            <li><strong>Phone:</strong> +977-123-456789</li>
+        </ul>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.310616098923!2d85.31124931503479!3d27.713224282786206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1937f0eaa48  1%3A0x2923b8dfaa6b847e!2sMount%20Everest!5e0!3m2!1sen!2snp!4v1626451721634!5m2!1sen!2snp" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>    
+
+    <!-- Back Button -->
+    <div class=" btn-center">
+        <a href="Destination.html" class="btn btn-custom">Back to Destinations</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Wanderer's Journey. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

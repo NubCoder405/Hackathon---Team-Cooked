@@ -3,136 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Hackathon Homepage</title>
+    <link rel="stylesheet" href="aboutus.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Reset margins */
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            color: #000000;
         }
 
-        /* Fixed Navbar */
         .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #000000;
-            z-index: 1000;
+            position: fixed; /* Fixes the navbar at the top */
+            top: 0; /* Sticks to the top of the page */
+            left: 0; /* Aligns it to the left edge */
+            width: 100%; /* Ensures it spans the entire width */
+            background-color: rgb(8, 16, 74); /* Keeps the background color */
+            z-index: 1000; /* Ensures the navbar stays on top of other elements */
+          
         }
 
         .navbar .nav-link {
             color: #fff;
             font-weight: bold;
             margin-right: 15px;
-            border-right: 1px solid #fff; /* Adds a white border to the right of each button */
-            padding-right: 15px; /* Adds padding to separate text from the border */
         }
 
         .navbar .nav-link:hover {
             color: #c8e6c9;
         }
-
-        /* Banner style */
-        .banner {
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 600px; /* Adjust banner height */
-            background: url('kfc.jpeg') no-repeat center center/cover;
-            text-align: left;
-            color: white;
-            margin-top: 70px; /* Adjust for fixed navbar */
+            height: 110%;
+            background: url('aboutus.jpg') center center/cover no-repeat;
+            z-index: -1;
         }
-        .banner h1 {
-            font-size: 5em;
-            padding: 200px;
-        }
-
-        /* Content styling */
         .content {
-            padding: 20px;
-            text-align: justify;
+            position: relative;
+            z-index: 1;
+            padding: 100px 20px;
+            
         }
 
-        h1 {
+        .hero {
             text-align: center;
-            margin-top: 20px;
+            padding: 200px 20px;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+    
         }
-        .content h1 {
-            text-align: left;
-        }
-        .content p {
-            font-size: medium;
-        }
+
+
     </style>
 </head>
 <body>
+    <!-- Video Background -->
+    <div class="background-image"></div>
+
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">NatureHackathon</a>
+            <a class="navbar-brand" href="#">Wanderer's Journey</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="Main.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Destinaton.html">Destination</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="About_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Destination.html">Destination</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About_us.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="Contact_us.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Banner Section -->
-    <div class="banner">
-        <h1>Responsible, Sustainable and Universally Accessible Tourism</h1>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero content" id="home">
+        <h1 class="roos">Responsible, Sustainable and Universally Accessible Tourism</h1>
+    </section>
 
-    <!-- Content Section -->
-    <div class="content">
-        <h1>About Us</h1>
-        <p>
-            Welcome to NatureHackathon, a platform dedicated to fostering innovation in promoting local tourism and preserving cultural heritage. 
-            Our mission is to inspire people to discover, protect, and celebrate the natural beauty and cultural significance of our region. 
-            We believe in sustainable tourism that connects communities, preserves traditions, and enhances the visitor experience.
-        </p>
-        <h1>Our Priorities</h1>
-        <p>
-            1. Preservation and Promotion of Local Cultural Heritage<br>
-            Protect Historical Landmarks: Prioritize conserving temples, monuments, and historic buildings in the region.<br>
-            Document Local Traditions: Record and archive oral histories, traditional music, dances, festivals, and crafts.<br>
-            Support Local Artisans: Promote local handicrafts and art forms by connecting them to markets or digital platforms.<br><br>
-            2. Sustainable Tourism Development<br>
-            Community-Based Tourism: Empower local communities to offer homestays, guided tours, and cultural experiences that generate income.<br>
-            Eco-Friendly Practices: Implement sustainable practices like waste management, plastic reduction, and eco-tourism activities.<br>
-            Preserve Natural Heritage: Protect nearby natural resources (forests, rivers, hills) as they complement cultural tourism.<br><br>
-            3. Promoting Local Festivals and Events<br>
-            Highlight and promote local festivals, rituals, and celebrations that showcase cultural identity (e.g., Jatras, fairs, seasonal events).<br>
-            Create event calendars for tourists to plan visits around major local events.<br>
-            Organize workshops and exhibitions to celebrate traditional practices like arts, cuisine, and music.<br><br>
-            4. Leveraging Technology for Cultural Heritage and Tourism<br>
-            Digital Platforms: Build websites or mobile apps with details on local heritage, cultural sites, and tourism activities.<br>
-            Virtual Tours: Offer 360° virtual tours of landmarks and cultural sites for global accessibility.<br>
-            Interactive Maps: Provide digital maps with routes, tourist attractions, and historical significance.<br><br>
-            5. Raising Awareness and Education<br>
-            Heritage Education: Conduct programs in local schools to teach children about their history and culture.<br>
-            Workshops for Locals: Train locals to be guides, storytellers, and ambassadors for their cultural heritage.<br>
-            Public Campaigns: Use social media, posters, and videos to promote the importance of preserving heritage.<br><br>
-            6. Improving Tourist Infrastructure<br>
-            Accessible Facilities: Develop visitor-friendly infrastructure like signages, clean restrooms, information centers, and proper transportation routes.<br>
-            Local Food and Hospitality: Encourage restaurants to offer local cuisines and promote homestay accommodations.<br>
-            Guided Experiences: Train local guides to offer immersive cultural and historical experiences.<br><br>
-            7. Economic Empowerment of Local Communities<br>
-            Support Local Businesses: Promote small businesses like souvenir shops, handicraft stalls, and local food vendors.<br>
-            Skill Development: Offer training programs to locals for tourism-related jobs (hospitality, tour guides, etc.).<br>
-            Revenue Sharing: Ensure income generated from tourism benefits local communities directly.<br>
-        </p>
-    </div>
+    <!-- Contact Section -->
+    <footer class="contact-section">
+    
+        <section ">
+            <h1 class="head">Our Priorites</h1>
+            <div class="par">
+              <p>
+                1. Preservation and Promotion of Local Cultural Heritage<br>
+                Protect Historical Landmarks: Prioritize conserving temples, monuments, and historic buildings in the region.
+                Document Local Traditions: Record and archive oral histories, traditional music, dances, festivals, and crafts.
+                Support Local Artisans: Promote local handicrafts and art forms by connecting them to markets or digital platforms.<br><br>
+                2. Sustainable Tourism Development<br>
+                Community-Based Tourism: Empower local communities to offer homestays, guided tours, and cultural experiences that generate income.
+                Eco-Friendly Practices: Implement sustainable practices like waste management, plastic reduction, and eco-tourism activities.
+                Preserve Natural Heritage: Protect nearby natural resources (forests, rivers, hills) as they complement cultural tourism.<br><br>
+                3. Promoting Local Festivals and Events<br>
+                Highlight and promote local festivals, rituals, and celebrations that showcase cultural identity (e.g., Jatras, fairs, seasonal events).
+                Create event calendars for tourists to plan visits around major local events.
+                Organize workshops and exhibitions to celebrate traditional practices like arts, cuisine, and music.<br><br>
+                4. Leveraging Technology for Cultural Heritage and Tourism<br>
+                Digital Platforms: Build websites or mobile apps with details on local heritage, cultural sites, and tourism activities.
+                Virtual Tours: Offer 360° virtual tours of landmarks and cultural sites for global accessibility.
+                Interactive Maps: Provide digital maps with routes, tourist attractions, and historical significance.<br><br>
+                5. Raising Awareness and Education<br>
+                Heritage Education: Conduct programs in local schools to teach children about their history and culture.
+                Workshops for Locals: Train locals to be guides, storytellers, and ambassadors for their cultural heritage.
+                Public Campaigns: Use social media, posters, and videos to promote the importance of preserving heritage.<br><br>
+                6. Improving Tourist Infrastructure<br>
+                Accessible Facilities: Develop visitor-friendly infrastructure like signages, clean restrooms, information centers, and proper transportation routes.
+                Local Food and Hospitality: Encourage restaurants to offer local cuisines and promote homestay accommodations.
+                Guided Experiences: Train local guides to offer immersive cultural and historical experiences.<br><br>
+                7. Economic Empowerment of Local Communities<br>
+                Support Local Businesses: Promote small businesses like souvenir shops, handicraft stalls, and local food vendors.
+                Skill Development: Offer training programs to locals for tourism-related jobs (hospitality, tour guides, etc.).
+                Revenue Sharing: Ensure income generated from tourism benefits local communities directly.<br><br><br>
+    
+              </p>
+                
+            </div>
+        </section>
+        <section class="about-us">
+            <h1 class="head">About Us</h1>
+            <p class="par">Welcome to Wanderer's Journey, a platform dedicated to fostering innovation in promoting local tourism and preserving cultural heritage. Our mission is to inspire people to discover, protect, and celebrate the natural beauty and cultural significance of our region. We believe in sustainable tourism that connects communities, preserves traditions, and enhances the visitor experience.</p>
+        </section>
+        </footer>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

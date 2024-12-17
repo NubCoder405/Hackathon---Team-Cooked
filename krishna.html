@@ -1,78 +1,167 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna</title>
+    <title>Krishna Temple</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Reset margins */
+        /* General Styles */
         body, html {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            scroll-behavior: smooth;
         }
 
-        /* Banner style */
+        /* Navbar Styles */
+        .navbar {
+            background-color: #062745;
+        }
+        .navbar .nav-link:hover {
+            color: #28a745 !important;
+        }
+
+        /* Banner Section */
         .banner {
-    width: 1350px;
-    height: 600px; /* Adjust banner height */
-    background: url('Krishna.jpeg') no-repeat;
-    background-size: cover; /* Ensures the image covers the container */
-    background-position: top center; /* Aligns the top part of the image */
-    position: relative; /* Makes text positioning relative to the banner */
-}
-
-
-
-        /* Everest text styling */
+            height: 500px;
+            background: url('Krishna.jpeg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
         .banner h1 {
-            position: absolute; /* Position the heading absolutely within the banner */
-            bottom: 20px; /* Place the text at the bottom */
-            left: 50%; /* Center the text horizontally */
-            transform: translateX(-50%); /* Adjust to center the heading horizontally */
-            color: white; /* Optional text color for contrast */
-            margin: 0; /* Removes default margin */
-            font-size: 36px; /* Adjust font size */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: add a text shadow for readability */
+            font-size: 80px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
         }
 
-        /* Content styling */
+        /* Content Section */
         .content {
-            padding: 20px;
+            margin: 40px auto;
+            max-width: 1100px;
+            padding: 0 20px;
+        }
+        h2, h4 {
+            color: #062745;
+            margin-top: 20px;
+        }
+
+        .image-text {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .image-text img {
+            width: 45%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .image-text p {
+            flex: 1;
             text-align: justify;
         }
 
-        h1 {
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #062745;
+            color: white;
             text-align: center;
-            margin-top: 20px;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wanderer's Journey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Main.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Destination.html">Destination</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Banner Section -->
     <div class="banner">
-        <h1 style="margin-bottom:50px; font-size:100px">Krishna Temple</h1>
+        <h1>Krishna Temple</h1>
     </div>
 
     <!-- Content Section -->
     <div class="content">
-        <h1 style="color:brown">Krishna Mandir</h1>
-        <p styke="">
-            Krishna Mandir, built between 1631 and 1637, is a 17th-century Shikhara-style
-             temple located in Patan Durbar Square, Nepal. It was constructed by King Siddhi 
-             Narsing Malla and is recognized as a significant historical and architectural site,
-              contributing to the area's status as a UNESCO World Heritage Site.
-        </p>
+        <h2>About Krishna Mandir</h2>
         <p>
-            The Krishna Mandir in Patan is a 17th-century Hindu temple located in Patan, Gujarat, India.
-             The temple is a significant example of Mughal architecture and is dedicated to Lord Krishna. 
-             Built in 1669, the temple features intricate carvings, ornate stone work, and a unique blend of
-              Hindu and Islamic styles. It is considered one of the most beautiful temples in India and attracts tourists and pilgrims
-             from all over the world. The temple is also a UNESCO World Heritage Site, recognized for its cultural and historical significance.
+            <strong>Krishna Mandir</strong>, located in Patan Durbar Square, is a stunning 17th-century Shikhara-style temple. Built in 1637 by King Siddhi Narsing Malla, the temple is dedicated to Lord Krishna. It stands as one of the finest architectural masterpieces in Nepal and is a prominent UNESCO World Heritage Site.
         </p>
+
+        <!-- Image and Text -->
+        <div class="image-text">
+            <img src="K2.jpg" alt="Krishna Temple">
+            <p>
+                This historic temple, made entirely of stone, features intricate carvings and a three-tiered structure that reflects Mughal and Hindu architectural styles. It holds deep cultural significance for Hindus and is a major destination for pilgrims and tourists alike. The temple stands as a testament to Nepal's rich heritage and craftsmanship.
+            </p>
+        </div>
+
+        <!-- Things to Know Section -->
+        <h2>Things to Know</h ```html
+        <h2>Things to Know</h2>
+        <ul>
+            <li><strong>Entry Fee:</strong>
+                <ul>
+                    <li>Foreigners: NPR 1,000</li>
+                    <li>Children (5-11): NPR 50</li>
+                    <li>Nepalese Citizens: Free</li>
+                </ul>
+            </li>
+            <li><strong>Best Mode of Transportation:</strong>
+                <ul>
+                    <li>Taxi</li>
+                    <li>Local Bus</li>
+                </ul>
+            </li>
+        </ul>
+        <div id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>For travel arrangements or inquiries, reach out to us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:info@wanderersjourney.com">info@wanderersjourney.com</a></li>
+            <li><strong>Phone:</strong> +977-123-456789</li>
+        </ul>
+
+        <!-- Map Section -->
+        <h2>Location</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7526.455481869963!2d85.31779746643754!3d27.673696413911042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c59efe8fe7%3A0xd8b03b0a1809bbfb!2sKrishna%20Mandir!5e0!3m2!1sen!2snp!4v1734455063932!5m2!1sen!2snp" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <a href="Destinaton.html" style="margin:20px;">Back</a>
+
+    <!-- Back Button -->
+    <div class="text-center my-4">
+        <a href="Destination.html" class="btn btn-primary">Back to Destination</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Wanderer's Journey. All rights not reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

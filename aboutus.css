@@ -1,0 +1,34 @@
+.wel{
+    font-size: 9em;
+    font-weight: 750;
+    font-family: 'Times New Roman', Times, serif
+
+}
+
+.contact-section {
+    background-color: white;
+    color: black;
+    padding: 30px 20px;
+    margin-top: 150px;
+}
+
+.head{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.par{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding-left: 20%;
+    padding-right: 15%;
+}
+.navbar-brand{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+}
+.nav-link{
+    color: red;
+}
+.roos{
+    font-size: 5em;
+}
