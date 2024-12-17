@@ -1,0 +1,57 @@
+.wel{
+    font-size: 9em;
+    font-weight: 750;
+    font-family: 'Times New Roman', Times, serif;
+}
+.wel2{
+    font-size: 2em;
+}
+.about-us{
+    text-align: left;
+    color:rgb(255, 215, 0);
+
+
+}
+.contact-us{
+    text-align: left;
+    color: rgb(255, 215, 0);
+}
+.contact-section {
+    background-color: rgb(8, 16, 74);
+    color: white;
+    display: flex;
+    padding: 30px 20px;
+    margin-top: 150px;
+}
+
+
+
+footer section { 
+    flex: 1;
+    margin: 0 10px;
+}
+.contactn{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.attr{
+    padding-left: 90px;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer .about-us { 
+    border-right: 2px solid#ffff00; 
+    padding-right: 10px;
+}
+.head{
+    font-family: 'Times New Roman', Times, serif;
+}
+.par{
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar-brand{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+}
+.nav-link{
+    color: red;
+}

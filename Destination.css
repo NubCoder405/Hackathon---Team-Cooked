@@ -1,0 +1,14 @@
+.plan {
+    font-size: 26em; /* Keep the large font size */
+    font-weight: 900;
+    margin-bottom: -150px; /* Negative margin to bring it closer */
+    line-height: 1.5; /* Adjust line height for tighter spacing */
+}
+
+.plan2 {
+    padding-left: 25px;
+    font-size: 10em; /* Keep the large font size */
+    font-weight: 900;
+    margin-top: 0; /* Remove top margin to avoid unnecessary spacing */
+    line-height: 1; /* Line height for visual clarity */
+}
